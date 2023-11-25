@@ -1,0 +1,48 @@
+$variable1: 95vh;
+
+.header {
+  position: relative;
+  height: $variable1;
+  background-image: url(https://scitechdaily.com/images/Renewable-Energy-777x518.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    svg {
+      fill: transparent;
+      stroke: white;
+      stroke-width: 3px;
+    }
+  }
+
+  .text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      display: block;
+      font-size: 60px;
+      font-weight: 400;
+      letter-spacing: 35px;
+    }
+
+    .sub-title {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 18px;
+    }
+  }
+}
